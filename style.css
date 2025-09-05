@@ -1,79 +1,35 @@
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style-type: none;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-:root {
-  --primary-green: hsl(75, 94%, 57%);
-  --neutral-white: hsl(0, 0%, 100%);
-  --neutral-grey: hsl(0, 0%, 20%);
-  --neutral-dark-grey: hsl(0, 0%, 12%);
-  --neutral-off-black: hsl(0, 0%, 8%);
-}
+    <link rel="icon" type="image/png" sizes="32x32" href="i" />
 
-body {
-  background-color: var(--neutral-off-black);
-  min-height: 100vh;
-  font-family: "Inter", sans-serif;
-  display: grid;
-  place-content: center;
-}
+    <title>Frontend Mentor | Social links profile</title>
+  </head>
+  <body>
+    <div class="card">
+      <img src="assets/images/avatar-jessica.jpeg" alt="Jessica Randall" />
+      <h1>Jessica Randall</h1>
+      <p class="location">London, United Kingdom</p>
 
-.card {
-  background-color: var(--neutral-dark-grey);
-  color: var(--neutral-white);
-  padding: 2rem;
-  margin: 1rem;
-  max-width: 400px;
-  text-align: center;
-  border-radius: 0.75rem;
-}
+      <p class="description">"Front-end developer and avid reader."</p>
 
-.card img {
-  margin-bottom: 0.5rem;
-  width: 75px;
-  border-radius: 50%;
-}
-
-.card h1 {
-  font-size: 1.75rem;
-}
-
-.card .location {
-  color: var(--primary-green);
-  margin: 0.5rem 0 1.5rem;
-  font-weight: 700;
-}
-
-.card ul {
-  margin-top: 1.75rem;
-}
-
-.card ul li:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.card ul li a {
-  display: block;
-  background-color: var(--neutral-grey);
-  color: var(--neutral-white);
-  padding: 1rem;
-  font-weight: 600;
-  border-radius: 120px;
-}
-
-.card ul li a:hover {
-  background-color: var(--primary-green);
-  color: var(--neutral-off-black);
-}
-
-@media (max-width: 500px) {
-  .attribution {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-}
+      <ul>
+        <li><a href="a">GitHub</a></li>
+        <li><a href="a">Frontend Mentor</a></li>
+        <li><a href="a">LinkedIn</a></li>
+        <li><a href="a">Twitter</a></li>
+        <li><a href="a">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Kadeem Benjamin</a>.
+    </div>
+  </body>
+</html>

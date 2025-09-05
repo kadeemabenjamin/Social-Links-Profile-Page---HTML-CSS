@@ -38,7 +38,7 @@ body {
   border-radius: 50%;
 }
 
-.card h2 {
+.card h1 {
   font-size: 1.75rem;
 }
 
@@ -70,10 +70,10 @@ body {
   color: var(--neutral-off-black);
 }
 
-.attribution {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Inter", sans-serif;
-  position: relative;
+@media (max-width: 500px) {
+  .attribution {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
 }
